@@ -7,8 +7,14 @@ import {
   LatestInvoicesSkeleton,
   RevenueChartSkeleton,
 } from '@/app/ui/skeletons';
+import { Metadata } from 'next';
 import { Suspense } from 'react';
 export const experimental_ppr = true;
+
+export const metadata: Metadata = {
+  title: 'overview',
+};
+
 export default async function Page() {
   return (
     <main>
